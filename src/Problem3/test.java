@@ -21,6 +21,6 @@ public class test {
         testarray[3][1]=8;
         testarray[3][2]=11;
         testarray[3][3]=15;
-        System.out.println(test.find(testarray,9));
+        System.out.println(test.find(testarray,100));
     }
 }
