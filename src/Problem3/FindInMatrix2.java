@@ -6,7 +6,7 @@ package Problem3;
  */
 public class FindInMatrix2 {
 	public boolean find(int testarray[][],int target){
-		if(testarray == null)
+		if(testarray==null||testarray.length==0||(testarray.length==1&&testarray[0].length==0)) 
 			return false;
 		int column = testarray.length - 1;
 		int row = 0;
