@@ -8,6 +8,7 @@ public class FindInMatrix {
 	//查找二维数组中数的方法
 	public boolean find(int testarray[][],int target)
 	{
+		
 		//时刻记住null的判定
 		if(testarray == null)
 			return false;
