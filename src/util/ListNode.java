@@ -2,9 +2,10 @@ package util;
 
 public class ListNode {
 	  public int val;
-	  public ListNode next;
+	  public ListNode next = null;
 	  public ListNode(int x) { val = x; }
-	public ListNode() {
+	  
+	  public ListNode() {
 		// TODO Auto-generated constructor stub
-	}
+	  }
 }
