@@ -23,7 +23,7 @@ public class Print1ToMaxOfNdigits {
 	public boolean Increment(int[] number){
 		boolean isOverflow = false;
 		int nTakeOver = 0;
-		for(int i = number.length -1 ; i>=0;i--)
+		for(int i = number.length -1 ; i>=0;i--)//从低位开始运算
 		{
 			int nSum = number[i]+nTakeOver;
 			if(i == number.length-1)//末位加一
