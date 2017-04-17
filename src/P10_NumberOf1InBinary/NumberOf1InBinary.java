@@ -1,4 +1,4 @@
-package Problem10;
+package P10_NumberOf1InBinary;
 /***
  * 求二进制的数字1的个数
  * @author chandler

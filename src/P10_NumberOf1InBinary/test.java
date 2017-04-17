@@ -1,4 +1,4 @@
-package Problem10;
+package P10_NumberOf1InBinary;
 
 public class test {
     public static void main(String args[]){
