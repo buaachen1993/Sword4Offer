@@ -1,6 +1,6 @@
 package souhu;
 
-import Problem5.printListReversversingly2;
+import P5_printListReversversingly.printListReversversingly2;
 import util.ListNode;
 
 public class PartitionList {
