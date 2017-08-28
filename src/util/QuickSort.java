@@ -9,11 +9,33 @@ public class QuickSort {
 	public static void quickSort(int[] array,int begin,int end) throws Exception{
 		if(begin >= end || array == null)
 			return;
-		int index = partition(array,begin,end);  
+		int index = partition2(array,begin,end);  
 		quickSort(array,begin,index-1);
 		quickSort(array,index+1,end);
 	}
-	
+	private static int partition2(int[] array,int beg,int end) throws Exception{
+		if(array == null||array.length <=0||beg < 0||end >=array.length)
+			throw new Exception("error!");
+		int first = array[beg];
+		int i = beg,j = end;
+		while(i<j){
+			while((array[i] <= first)&&(i<end))
+				i++;
+			while(array[j] > first && j>=beg)
+				j--;
+			if(i<j){
+				int temp = array[i];
+				array[i] = array[j];
+				array[j] = temp;
+			}	
+		}
+		if(j!=beg){
+			int temp = array[j];
+			array[j] = array[beg];
+			array[beg] = temp;
+		}
+		return j;
+	}
 	private static int partition(int[] array,int beg,int end) throws Exception{
 		if(array == null||array.length <=0 ||beg < 0 || end >=array.length)
 			throw new Exception("error!");
