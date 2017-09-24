@@ -18,7 +18,7 @@ public class QueueWithTwoStacks {
 		stack1.push(number);
 	}
 	public void deleteHead() throws Exception{
-		if(!stack2.isEmpty())
+		if(!stack2.isEmpty()) 
 			stack2.pop();
 		else//将stack1内容弹出到stack2
 		{
